@@ -73,7 +73,7 @@ public:
 private:
     std::list<KVPair> item_list_;
     std::unordered_map<K, KVPairListIter> item_map_;
-    int max_size_;
+    size_t max_size_;
     std::mutex mutex_;
 };
 
