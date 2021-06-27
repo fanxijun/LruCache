@@ -57,7 +57,7 @@ void TestLruCacheRemove()
     std::string value = lru_cache.Get(200);
     std::cout << "get key:200, value:" << value << '\n';
 
-    bool ret = lru_cache.Remove(200);
+    lru_cache.Remove(200);
     value = lru_cache.Get(200);
     std::cout << "get key:200, value:" << value << '\n';
 }
@@ -70,5 +70,5 @@ int main(int argc, char** argv)
     TestLruCachePut();
     TestLruCacheRemove();
 
-	return 0;
+    return 0;
 }
